@@ -1,0 +1,1103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shreyshi Mandal | Content Strategist & Copywriter</title>
+  <meta name="description" content="Portfolio of Shreyshi Mandal, a Delhi-based Content Strategist and Copywriter specializing in B2B SaaS, AI, PropTech, SEO content, LinkedIn strategy, and brand messaging." />
+
+  <style>
+    :root {
+      --bg: #f7f4ef;
+      --paper: #fffaf3;
+      --ink: #1e1b18;
+      --muted: #6f675f;
+      --brand: #9a5b2f;
+      --brand-dark: #5c321d;
+      --accent: #d8a15d;
+      --sage: #748c69;
+      --line: rgba(30, 27, 24, 0.12);
+      --shadow: 0 24px 70px rgba(53, 36, 22, 0.12);
+      --radius-lg: 28px;
+      --radius-md: 18px;
+      --radius-sm: 12px;
+      --max: 1180px;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background:
+        radial-gradient(circle at top left, rgba(216, 161, 93, 0.24), transparent 28rem),
+        radial-gradient(circle at top right, rgba(116, 140, 105, 0.18), transparent 30rem),
+        var(--bg);
+      color: var(--ink);
+      line-height: 1.65;
+      overflow-x: hidden;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    img {
+      max-width: 100%;
+      display: block;
+    }
+
+    .container {
+      width: min(var(--max), calc(100% - 40px));
+      margin: 0 auto;
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      color: var(--brand-dark);
+      font-size: 0.78rem;
+      font-weight: 800;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+    }
+
+    .eyebrow::before {
+      content: "";
+      width: 34px;
+      height: 2px;
+      background: var(--accent);
+      border-radius: 999px;
+    }
+
+    .section-title {
+      margin-top: 14px;
+      font-size: clamp(2rem, 4vw, 3.4rem);
+      line-height: 1.04;
+      letter-spacing: -0.06em;
+      color: var(--ink);
+    }
+
+    .section-text {
+      margin-top: 18px;
+      max-width: 760px;
+      color: var(--muted);
+      font-size: 1.04rem;
+    }
+
+    .site-header {
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      backdrop-filter: blur(18px);
+      background: rgba(247, 244, 239, 0.82);
+      border-bottom: 1px solid var(--line);
+    }
+
+    .nav {
+      height: 76px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-weight: 900;
+      letter-spacing: -0.04em;
+    }
+
+    .logo-mark {
+      width: 42px;
+      height: 42px;
+      border-radius: 14px;
+      display: grid;
+      place-items: center;
+      color: white;
+      background: linear-gradient(135deg, var(--brand), var(--brand-dark));
+      box-shadow: 0 12px 30px rgba(92, 50, 29, 0.22);
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 26px;
+      color: var(--muted);
+      font-size: 0.94rem;
+      font-weight: 700;
+    }
+
+    .nav-links a {
+      transition: 0.25s ease;
+    }
+
+    .nav-links a:hover {
+      color: var(--brand-dark);
+    }
+
+    .nav-cta {
+      padding: 12px 18px;
+      border-radius: 999px;
+      background: var(--ink);
+      color: #fffaf3;
+      font-weight: 800;
+      box-shadow: 0 14px 36px rgba(30, 27, 24, 0.18);
+    }
+
+    .hero {
+      padding: 82px 0 54px;
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.05fr 0.95fr;
+      gap: 44px;
+      align-items: center;
+    }
+
+    .hero-card {
+      position: relative;
+      padding: 48px;
+      border-radius: var(--radius-lg);
+      background: rgba(255, 250, 243, 0.72);
+      border: 1px solid rgba(30, 27, 24, 0.09);
+      box-shadow: var(--shadow);
+      overflow: hidden;
+    }
+
+    .hero-card::after {
+      content: "";
+      position: absolute;
+      right: -90px;
+      top: -90px;
+      width: 260px;
+      height: 260px;
+      border-radius: 50%;
+      background: rgba(216, 161, 93, 0.26);
+    }
+
+    .hero h1 {
+      position: relative;
+      margin-top: 18px;
+      font-size: clamp(3.2rem, 8vw, 6.8rem);
+      line-height: 0.9;
+      letter-spacing: -0.09em;
+      max-width: 790px;
+    }
+
+    .hero h1 span {
+      color: var(--brand);
+    }
+
+    .hero-subtitle {
+      position: relative;
+      margin-top: 28px;
+      color: var(--muted);
+      font-size: clamp(1.05rem, 2vw, 1.25rem);
+      max-width: 680px;
+    }
+
+    .hero-actions {
+      position: relative;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
+      margin-top: 34px;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      padding: 14px 20px;
+      border-radius: 999px;
+      font-weight: 850;
+      border: 1px solid transparent;
+      transition: 0.25s ease;
+    }
+
+    .btn-primary {
+      color: #fffaf3;
+      background: linear-gradient(135deg, var(--brand), var(--brand-dark));
+      box-shadow: 0 18px 40px rgba(92, 50, 29, 0.2);
+    }
+
+    .btn-primary:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 24px 52px rgba(92, 50, 29, 0.26);
+    }
+
+    .btn-secondary {
+      color: var(--brand-dark);
+      border-color: rgba(92, 50, 29, 0.2);
+      background: rgba(255, 250, 243, 0.75);
+    }
+
+    .btn-secondary:hover {
+      border-color: var(--brand);
+      transform: translateY(-2px);
+    }
+
+    .profile-panel {
+      min-height: 590px;
+      border-radius: var(--radius-lg);
+      background:
+        linear-gradient(145deg, rgba(92, 50, 29, 0.92), rgba(154, 91, 47, 0.88)),
+        url("data:image/svg+xml,%3Csvg width='120' height='120' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' stroke='rgba(255,255,255,0.13)' stroke-width='1'%3E%3Cpath d='M0 30h120M0 60h120M0 90h120M30 0v120M60 0v120M90 0v120'/%3E%3C/g%3E%3C/svg%3E");
+      color: #fffaf3;
+      padding: 34px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      box-shadow: var(--shadow);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .profile-panel::before {
+      content: "";
+      position: absolute;
+      inset: 24px;
+      border: 1px solid rgba(255, 250, 243, 0.18);
+      border-radius: 24px;
+      pointer-events: none;
+    }
+
+    .availability {
+      align-self: flex-start;
+      padding: 10px 14px;
+      border-radius: 999px;
+      background: rgba(255, 250, 243, 0.13);
+      border: 1px solid rgba(255, 250, 243, 0.2);
+      font-size: 0.88rem;
+      font-weight: 800;
+    }
+
+    .initials {
+      width: 158px;
+      height: 158px;
+      border-radius: 42px;
+      display: grid;
+      place-items: center;
+      margin: 46px auto 34px;
+      background: rgba(255, 250, 243, 0.16);
+      border: 1px solid rgba(255, 250, 243, 0.26);
+      font-size: 4rem;
+      font-weight: 950;
+      letter-spacing: -0.09em;
+      box-shadow: inset 0 0 0 12px rgba(255, 250, 243, 0.06);
+    }
+
+    .profile-panel h2 {
+      font-size: clamp(2rem, 4vw, 3rem);
+      line-height: 1.02;
+      letter-spacing: -0.06em;
+      text-align: center;
+    }
+
+    .profile-panel p {
+      margin: 18px auto 0;
+      max-width: 420px;
+      color: rgba(255, 250, 243, 0.78);
+      text-align: center;
+    }
+
+    .contact-strip {
+      margin-top: 36px;
+      display: grid;
+      gap: 12px;
+      position: relative;
+      z-index: 1;
+    }
+
+    .contact-item {
+      padding: 14px 16px;
+      border-radius: 16px;
+      background: rgba(255, 250, 243, 0.12);
+      border: 1px solid rgba(255, 250, 243, 0.16);
+      display: flex;
+      justify-content: space-between;
+      gap: 14px;
+      color: rgba(255, 250, 243, 0.86);
+      font-size: 0.92rem;
+    }
+
+    .stats {
+      padding: 18px 0 44px;
+    }
+
+    .stats-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 16px;
+    }
+
+    .stat-card {
+      padding: 24px;
+      border-radius: var(--radius-md);
+      background: rgba(255, 250, 243, 0.7);
+      border: 1px solid var(--line);
+    }
+
+    .stat-card strong {
+      display: block;
+      color: var(--brand-dark);
+      font-size: 1.7rem;
+      line-height: 1;
+      letter-spacing: -0.05em;
+    }
+
+    .stat-card span {
+      display: block;
+      margin-top: 10px;
+      color: var(--muted);
+      font-size: 0.93rem;
+      font-weight: 700;
+    }
+
+    section {
+      padding: 74px 0;
+    }
+
+    .about-grid {
+      display: grid;
+      grid-template-columns: 0.9fr 1.1fr;
+      gap: 38px;
+      align-items: start;
+    }
+
+    .about-card,
+    .service-card,
+    .skill-card,
+    .process-card,
+    .credential-card {
+      border: 1px solid var(--line);
+      background: rgba(255, 250, 243, 0.72);
+      border-radius: var(--radius-md);
+      box-shadow: 0 18px 54px rgba(53, 36, 22, 0.07);
+    }
+
+    .about-card {
+      padding: 34px;
+      position: sticky;
+      top: 104px;
+    }
+
+    .about-card h3 {
+      font-size: 1.7rem;
+      letter-spacing: -0.05em;
+      line-height: 1.1;
+    }
+
+    .about-card p {
+      margin-top: 16px;
+      color: var(--muted);
+    }
+
+    .signature {
+      margin-top: 28px;
+      padding-top: 22px;
+      border-top: 1px solid var(--line);
+      color: var(--brand-dark);
+      font-size: 1.3rem;
+      font-weight: 900;
+      letter-spacing: -0.05em;
+    }
+
+    .about-copy {
+      padding-top: 10px;
+    }
+
+    .about-copy p {
+      color: var(--muted);
+      font-size: 1.07rem;
+      margin-bottom: 18px;
+    }
+
+    .highlight-list {
+      margin-top: 24px;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 14px;
+    }
+
+    .highlight {
+      padding: 18px;
+      border-radius: 18px;
+      background: rgba(216, 161, 93, 0.12);
+      border: 1px solid rgba(154, 91, 47, 0.13);
+      font-weight: 800;
+      color: var(--brand-dark);
+    }
+
+    .services-grid {
+      margin-top: 38px;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 18px;
+    }
+
+    .service-card {
+      padding: 28px;
+      transition: 0.25s ease;
+    }
+
+    .service-card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 26px 68px rgba(53, 36, 22, 0.11);
+    }
+
+    .service-icon {
+      width: 48px;
+      height: 48px;
+      border-radius: 16px;
+      display: grid;
+      place-items: center;
+      background: rgba(154, 91, 47, 0.12);
+      color: var(--brand-dark);
+      font-size: 1.35rem;
+    }
+
+    .service-card h3 {
+      margin-top: 22px;
+      font-size: 1.25rem;
+      letter-spacing: -0.04em;
+    }
+
+    .service-card p {
+      margin-top: 12px;
+      color: var(--muted);
+      font-size: 0.98rem;
+    }
+
+    .skill-cloud {
+      margin-top: 36px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    .skill-pill {
+      padding: 11px 15px;
+      border-radius: 999px;
+      color: var(--brand-dark);
+      background: rgba(255, 250, 243, 0.72);
+      border: 1px solid rgba(92, 50, 29, 0.15);
+      font-weight: 800;
+      font-size: 0.9rem;
+      transition: 0.25s ease;
+    }
+
+    .skill-pill:hover {
+      transform: translateY(-3px);
+      background: rgba(216, 161, 93, 0.18);
+    }
+
+    .process {
+      background:
+        linear-gradient(180deg, rgba(255, 250, 243, 0.46), rgba(255, 250, 243, 0)),
+        transparent;
+    }
+
+    .process-grid {
+      margin-top: 38px;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 16px;
+      counter-reset: process;
+    }
+
+    .process-card {
+      padding: 26px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .process-card::before {
+      counter-increment: process;
+      content: "0" counter(process);
+      display: inline-flex;
+      width: 44px;
+      height: 44px;
+      align-items: center;
+      justify-content: center;
+      border-radius: 14px;
+      background: var(--ink);
+      color: #fffaf3;
+      font-weight: 900;
+      margin-bottom: 20px;
+    }
+
+    .process-card h3 {
+      font-size: 1.12rem;
+      letter-spacing: -0.04em;
+    }
+
+    .process-card p {
+      margin-top: 10px;
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+
+    .credentials-grid {
+      margin-top: 38px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 18px;
+    }
+
+    .credential-card {
+      padding: 30px;
+    }
+
+    .credential-meta {
+      display: inline-flex;
+      padding: 8px 12px;
+      border-radius: 999px;
+      color: var(--brand-dark);
+      background: rgba(216, 161, 93, 0.15);
+      font-size: 0.8rem;
+      font-weight: 900;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+    }
+
+    .credential-card h3 {
+      margin-top: 18px;
+      font-size: 1.45rem;
+      letter-spacing: -0.05em;
+      line-height: 1.15;
+    }
+
+    .credential-card p {
+      margin-top: 12px;
+      color: var(--muted);
+    }
+
+    .contact {
+      padding-bottom: 90px;
+    }
+
+    .contact-box {
+      display: grid;
+      grid-template-columns: 1.05fr 0.95fr;
+      gap: 30px;
+      align-items: stretch;
+      padding: 38px;
+      border-radius: var(--radius-lg);
+      background: linear-gradient(135deg, var(--ink), #3b2b20);
+      color: #fffaf3;
+      box-shadow: var(--shadow);
+      overflow: hidden;
+      position: relative;
+    }
+
+    .contact-box::after {
+      content: "";
+      position: absolute;
+      right: -80px;
+      bottom: -90px;
+      width: 280px;
+      height: 280px;
+      border-radius: 50%;
+      background: rgba(216, 161, 93, 0.16);
+    }
+
+    .contact-box h2 {
+      font-size: clamp(2.1rem, 5vw, 4.4rem);
+      line-height: 0.98;
+      letter-spacing: -0.08em;
+      max-width: 720px;
+    }
+
+    .contact-box p {
+      margin-top: 20px;
+      color: rgba(255, 250, 243, 0.72);
+      max-width: 620px;
+    }
+
+    .contact-links {
+      position: relative;
+      z-index: 1;
+      display: grid;
+      gap: 14px;
+    }
+
+    .contact-link {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      padding: 18px;
+      border-radius: 18px;
+      background: rgba(255, 250, 243, 0.1);
+      border: 1px solid rgba(255, 250, 243, 0.16);
+      color: rgba(255, 250, 243, 0.88);
+      transition: 0.25s ease;
+    }
+
+    .contact-link:hover {
+      transform: translateX(4px);
+      background: rgba(255, 250, 243, 0.15);
+    }
+
+    .footer {
+      padding: 28px 0;
+      border-top: 1px solid var(--line);
+      color: var(--muted);
+      font-size: 0.92rem;
+    }
+
+    .footer-content {
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .reveal {
+      opacity: 0;
+      transform: translateY(24px);
+      transition: 0.7s ease;
+    }
+
+    .reveal.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    @media (max-width: 980px) {
+      .hero-grid,
+      .about-grid,
+      .contact-box {
+        grid-template-columns: 1fr;
+      }
+
+      .profile-panel {
+        min-height: auto;
+      }
+
+      .stats-grid,
+      .process-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .services-grid,
+      .credentials-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .about-card {
+        position: static;
+      }
+    }
+
+    @media (max-width: 720px) {
+      .container {
+        width: min(100% - 28px, var(--max));
+      }
+
+      .nav {
+        height: auto;
+        padding: 16px 0;
+        align-items: flex-start;
+      }
+
+      .nav-links {
+        display: none;
+      }
+
+      .hero {
+        padding-top: 48px;
+      }
+
+      .hero-card,
+      .profile-panel,
+      .contact-box {
+        padding: 26px;
+      }
+
+      .hero h1 {
+        font-size: clamp(3rem, 16vw, 4.8rem);
+      }
+
+      .stats-grid,
+      .process-grid,
+      .highlight-list {
+        grid-template-columns: 1fr;
+      }
+
+      section {
+        padding: 52px 0;
+      }
+
+      .contact-item,
+      .contact-link {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="container nav">
+      <a class="logo" href="#top" aria-label="Shreyshi Mandal home">
+        <span class="logo-mark">SM</span>
+        <span>Shreyshi Mandal</span>
+      </a>
+
+      <nav class="nav-links" aria-label="Primary navigation">
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#expertise">Expertise</a>
+        <a href="#credentials">Credentials</a>
+        <a class="nav-cta" href="mailto:shreyshimandal27@gmail.com">Work Together</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-card reveal">
+          <span class="eyebrow">Business Profile Portfolio</span>
+          <h1>Content that turns ideas into <span>market clarity.</span></h1>
+          <p class="hero-subtitle">
+            Shreyshi Mandal is a Content Strategist & Copywriter based in Delhi, India,
+            helping B2B SaaS, AI, and PropTech brands shape sharper messaging, stronger
+            content roadmaps, and conversion-focused communication across channels.
+          </p>
+
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="mailto:shreyshimandal27@gmail.com">Start a Conversation</a>
+            <a class="btn btn-secondary" href="https://www.linkedin.com/in/shreyshi-mandal-04b90b180/" target="_blank" rel="noopener noreferrer">View LinkedIn</a>
+          </div>
+        </div>
+
+        <aside class="profile-panel reveal" aria-label="Profile summary">
+          <div class="availability">Content Strategy · Copywriting · Brand Messaging</div>
+
+          <div>
+            <div class="initials">SM</div>
+            <h2>Strategic copy for brands with something meaningful to say.</h2>
+            <p>
+              Positioning, storytelling, SEO content, newsletters, LinkedIn strategy,
+              email marketing, and campaign messaging built around business goals.
+            </p>
+          </div>
+
+          <div class="contact-strip">
+            <a class="contact-item" href="mailto:shreyshimandal27@gmail.com">
+              <span>Email</span>
+              <strong>shreyshimandal27@gmail.com</strong>
+            </a>
+            <a class="contact-item" href="tel:+917300215123">
+              <span>Phone</span>
+              <strong>7300215123</strong>
+            </a>
+            <div class="contact-item">
+              <span>Location</span>
+              <strong>Delhi, India</strong>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="stats">
+      <div class="container stats-grid">
+        <div class="stat-card reveal">
+          <strong>B2B</strong>
+          <span>SaaS copywriting focus</span>
+        </div>
+        <div class="stat-card reveal">
+          <strong>AI</strong>
+          <span>Emerging tech content</span>
+        </div>
+        <div class="stat-card reveal">
+          <strong>SEO</strong>
+          <span>Search-led content writing</span>
+        </div>
+        <div class="stat-card reveal">
+          <strong>2017</strong>
+          <span>B.Com, Rajasthan University</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="about">
+      <div class="container about-grid">
+        <div class="about-card reveal">
+          <span class="eyebrow">About</span>
+          <h3>Copy rooted in strategy, voice, and measurable intent.</h3>
+          <p>
+            Shreyshi brings together brand thinking, audience understanding, and structured
+            messaging to create content that is useful, credible, and commercially aligned.
+          </p>
+          <div class="signature">Shreyshi Mandal</div>
+        </div>
+
+        <div class="about-copy reveal">
+          <h2 class="section-title">Building content systems for modern brands.</h2>
+          <p>
+            As a Content Strategist & Copywriter, Shreyshi works across content roadmaps,
+            campaign messaging, value propositions, thought leadership, product messaging,
+            SEO content, LinkedIn strategy, newsletters, social media growth, and email marketing.
+          </p>
+          <p>
+            Her approach combines long-form and short-form content with brand voice consistency,
+            performance optimization, and data-driven content decisions. She is especially aligned
+            with teams operating in B2B SaaS, AI, PropTech, and technology-led markets.
+          </p>
+
+          <div class="highlight-list">
+            <div class="highlight">Clear positioning for complex products</div>
+            <div class="highlight">Content roadmaps aligned with business goals</div>
+            <div class="highlight">Thought leadership for founders and brands</div>
+            <div class="highlight">Multichannel copy built for performance</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="services">
+      <div class="container">
+        <span class="eyebrow">Services</span>
+        <h2 class="section-title">Content support across the full brand funnel.</h2>
+        <p class="section-text">
+          From foundational messaging to always-on content engines, Shreyshi helps brands communicate
+          with more clarity, consistency, and audience relevance.
+        </p>
+
+        <div class="services-grid">
+          <article class="service-card reveal">
+            <div class="service-icon">✦</div>
+            <h3>Content Strategy</h3>
+            <p>
+              Content roadmaps, editorial planning, channel strategy, messaging frameworks,
+              and audience-focused content direction.
+            </p>
+          </article>
+
+          <article class="service-card reveal">
+            <div class="service-icon">✎</div>
+            <h3>Copywriting</h3>
+            <p>
+              Website copy, landing page copy, campaign messaging, product messaging,
+              value propositions, emails, and social copy.
+            </p>
+          </article>
+
+          <article class="service-card reveal">
+            <div class="service-icon">↗</div>
+            <h3>Growth Content</h3>
+            <p>
+              SEO content writing, LinkedIn strategy, newsletter management, thought leadership,
+              and performance optimization.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="expertise">
+      <div class="container">
+        <span class="eyebrow">Expertise</span>
+        <h2 class="section-title">A practical mix of strategy, storytelling, and execution.</h2>
+        <p class="section-text">
+          Shreyshi’s skill set spans planning, writing, optimization, and brand communication
+          across both long-form and short-form formats.
+        </p>
+
+        <div class="skill-cloud reveal">
+          <span class="skill-pill">Content Strategy</span>
+          <span class="skill-pill">Content Roadmaps</span>
+          <span class="skill-pill">B2B SaaS Copywriting</span>
+          <span class="skill-pill">LinkedIn Strategy</span>
+          <span class="skill-pill">Thought Leadership</span>
+          <span class="skill-pill">AI & PropTech Content</span>
+          <span class="skill-pill">SEO Content Writing</span>
+          <span class="skill-pill">Newsletter Management</span>
+          <span class="skill-pill">Product Messaging</span>
+          <span class="skill-pill">Value Propositions</span>
+          <span class="skill-pill">Campaign Messaging Frameworks</span>
+          <span class="skill-pill">Performance Optimization</span>
+          <span class="skill-pill">Brand Voice</span>
+          <span class="skill-pill">Social Media Growth</span>
+          <span class="skill-pill">Email Marketing</span>
+          <span class="skill-pill">Long-form Content</span>
+          <span class="skill-pill">Short-form Content</span>
+          <span class="skill-pill">Multilingual Copywriting</span>
+          <span class="skill-pill">Data-driven Content Decisions</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="process">
+      <div class="container">
+        <span class="eyebrow">Approach</span>
+        <h2 class="section-title">A structured process for stronger communication.</h2>
+
+        <div class="process-grid">
+          <article class="process-card reveal">
+            <h3>Understand</h3>
+            <p>
+              Clarify audience, market context, product value, brand voice, and business goals.
+            </p>
+          </article>
+
+          <article class="process-card reveal">
+            <h3>Position</h3>
+            <p>
+              Shape value propositions, messaging pillars, and narratives that simplify the offer.
+            </p>
+          </article>
+
+          <article class="process-card reveal">
+            <h3>Create</h3>
+            <p>
+              Build content across web, SEO, LinkedIn, email, newsletters, and campaign assets.
+            </p>
+          </article>
+
+          <article class="process-card reveal">
+            <h3>Optimize</h3>
+            <p>
+              Use performance signals and content learnings to improve clarity, relevance, and results.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="credentials">
+      <div class="container">
+        <span class="eyebrow">Credentials</span>
+        <h2 class="section-title">Education and professional foundation.</h2>
+
+        <div class="credentials-grid">
+          <article class="credential-card reveal">
+            <span class="credential-meta">Education · 2017</span>
+            <h3>Bachelor of Commerce</h3>
+            <p>Rajasthan University</p>
+          </article>
+
+          <article class="credential-card reveal">
+            <span class="credential-meta">Professional Focus</span>
+            <h3>Content Strategist & Copywriter</h3>
+            <p>
+              Focused on B2B SaaS copywriting, AI and PropTech content, brand voice,
+              product messaging, SEO, LinkedIn strategy, and content-led growth.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact">
+      <div class="container">
+        <div class="contact-box reveal">
+          <div>
+            <span class="eyebrow" style="color:#d8a15d;">Contact</span>
+            <h2>Let’s build content that makes your brand easier to understand.</h2>
+            <p>
+              For content strategy, copywriting, brand messaging, SEO content, LinkedIn strategy,
+              newsletters, or campaign messaging, reach out directly.
+            </p>
+          </div>
+
+          <div class="contact-links">
+            <a class="contact-link" href="mailto:shreyshimandal27@gmail.com">
+              <span>Email</span>
+              <strong>shreyshimandal27@gmail.com</strong>
+            </a>
+            <a class="contact-link" href="tel:+917300215123">
+              <span>Phone</span>
+              <strong>7300215123</strong>
+            </a>
+            <a class="contact-link" href="https://www.linkedin.com/in/shreyshi-mandal-04b90b180/" target="_blank" rel="noopener noreferrer">
+              <span>LinkedIn</span>
+              <strong>Connect with Shreyshi</strong>
+            </a>
+            <a class="contact-link" href="https://yourportfolio.work/shreyshi1" target="_blank" rel="noopener noreferrer">
+              <span>Portfolio</span>
+              <strong>yourportfolio.work/shreyshi1</strong>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-content">
+      <p>© 2026 Shreyshi Mandal. All rights reserved.</p>
+      <p>Content Strategist & Copywriter · Delhi, India</p>
+    </div>
+  </footer>
+
+  <script>
+    const revealElements = document.querySelectorAll(".reveal");
+
+    const observer = new IntersectionObserver(
+      entries => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("visible");
+          }
+        });
+      },
+      { threshold: 0.14 }
+    );
+
+    revealElements.forEach(element => observer.observe(element));
+  </script>
+
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Shreyshi Mandal",
+      "jobTitle": "Content Strategist & Copywriter",
+      "email": "mailto:shreyshimandal27@gmail.com",
+      "telephone": "+91-7300215123",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Delhi",
+        "addressCountry": "India"
+      },
+      "url": "https://yourportfolio.work/shreyshi1",
+      "sameAs": [
+        "https://www.linkedin.com/in/shreyshi-mandal-04b90b180/"
+      ],
+      "knowsAbout": [
+        "Content Strategy",
+        "Copywriting",
+        "B2B SaaS Copywriting",
+        "LinkedIn Strategy",
+        "Thought Leadership",
+        "SEO Content Writing",
+        "Newsletter Management",
+        "Product Messaging",
+        "Email Marketing",
+        "Brand Voice"
+      ]
+    }
+  </script>
+</body>
+</html>
